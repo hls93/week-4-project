@@ -3,6 +3,8 @@
 <head>
   <title>iTunes Music Search</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -10,14 +12,20 @@
       <h1>Really Awesome Music Site</h1>
     </header>
     <section class="player">
-      <audio class="music-player" controls="controls" src=""></audio>
+      <audio class="musicPlayer" controls="controls" src=""></audio>
+      <p id="currentSong"></p>
     </section>
     <section class="search">
-      <form class="search-form">
-        
+      <form class="searchForm">
+        <input id="searchBar" placeholder="Search for an artist" class="input"
+         type="text" name="input" value="">
+         <button id="submit" type="button" name="button">Search</button>
+
       </form>
     </section>
-    <section class="results"></section>
+    <section class="results">
+
+    </section>
   </div>
   <script src="main.js"></script>
 </body>
